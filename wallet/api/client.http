@@ -1,0 +1,26 @@
+### POST /clients
+POST http://localhost:8080/clients HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Caju 3",
+    "email": "caju2@caju.com"
+}
+
+### POST /accounts
+POST http://localhost:8080/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "client_id": "f689e75c-4412-4328-9e73-5371a24711b6"
+}
+
+### POST /transactions
+POST http://localhost:8080/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "account_id_from": "d6a41403-bbd0-11ee-8a24-0242ac120003",
+    "account_id_to": "d6a41504-bbd0-11ee-8a24-0242ac120003",
+    "amount": 100
+}
